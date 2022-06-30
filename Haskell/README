@@ -1,0 +1,13 @@
+Part A runs as specified in the assignment scope
+
+for Part B simply type f "<a,b string>" in quotation marks
+"_" represents the blanks
+
+The sequence of possible Turing machine state configurations
+that are used during the computation of f with the input string:
+"aba" is ...
+<Qs,'a','_',Q3>, <Q3,'b','b',Q3>, <Q3,'a','a',Q3>, <Q3,'_','_',Q4>, <Q4,'a','_',Q5>, <Q5,'b','b',Q5>, <Q5,'_','_',Qs>, <Qs,'b','_',Q1>, <Q1,'_','_',Q2>, <Q2,'_','_',Qa>
+
+The turing machine compares the outer chars (first then last) of a string, while recursively moving inwards.
+In the example, the pointer is at the first char 'a' then moves all the way to the right to get the last
+char 'a' before moving to the middle to get char 'b'. takes a, then a, then takes b.

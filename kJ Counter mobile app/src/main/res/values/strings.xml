@@ -1,0 +1,25 @@
+<resources>
+    <string name="diary">Diary</string>
+    <string name="avg_intake">Average Intake</string>
+    <string name="nki_calc">Add a Diary Entry</string>
+    <string name="discard">Discard</string>
+    <string name="save">Save</string>
+    <string name="foodTotal">Food</string>
+    <string name="exerciseTotal">Exercise</string>
+    <string name="NKI">Net kJ Intake</string>
+    <string name="totals">Totals</string>
+    <string name="previous">back</string>
+    <string name="grossIntake" translatable="false" />
+    <string name="grossDepleted" translatable="false" />
+    <string name="NetKiloJoulesInTake" translatable="false" />
+    <string name="calculate">Calculate</string>
+    <string name="lunch">Lunch</string>
+    <string name="sport">Sport</string>
+    <string name="dinner">Dinner</string>
+    <string name="jogging">Jogging</string>
+    <string name="date_text" translatable="false">DD/MM/YYYY</string>
+    <string name="calculator">Calculator</string>
+    <string name="app_name">Kilojoule Counter</string>
+    <string name="overview">Overview</string>
+    <string name="avg_Counter">Average NKI</string>
+</resources>

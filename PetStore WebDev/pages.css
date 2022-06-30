@@ -1,0 +1,115 @@
+/*All pages*/
+.menu {
+    text-align: center;
+    font-size: xx-large;
+    color: blue;
+    width: 94%;
+}
+
+body{
+    text-align: center;
+    color: green;
+    background-color: yellow;
+}
+
+h1, h6{
+    color: red;
+}
+
+button {
+    background-color: purple;
+    color: white;
+}
+
+button:hover{
+    background-color: pink;
+}
+
+.box{
+    width: 25em;
+    height: 15em;
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Products page*/
+td, table{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Contact Us*/
+#comms, #query{
+    width: 94%;
+}
+
+.ContactUs{
+    max-width: fit-content;
+}
+
+.ContactUs img{
+    width: 100%;
+}
+
+.ContactUs h5, .ContactUs h6{
+    color: orange;
+}
+
+@media (min-width: 690px){
+    .ContactUs > .menu{
+        float: left;
+    }
+    #comms{
+        width:46%;
+        clear:left;
+        float:left;
+        margin-left: 3%;
+    }
+    #query{
+        width:46%;
+        float:left;
+        margin-left: 2%;
+        margin-right: 3%;
+    }
+}
+@media (min-width: 1015px){
+    .ContactUs > .menu{
+        width: 30%;
+    }
+    #comms{
+        width:30%;
+        clear:none;
+        margin-left: 2%;
+    }
+    #query{
+        width:30%;
+    }
+}
+
+/*Fun Facts page*/
+#dog{
+    background-image: url("pup.jpeg");
+}
+
+#cat{
+    background-image: url("kitty.jpeg");
+}
+
+#hamster{
+    background-image: url("hamster.jpeg");
+}
+
+#bird{
+    background-image: url("parrot.jpeg");
+}
+
+.Facts > div{
+    height: 10em;
+    line-height: 500%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pet Store</title>
+        <h1>Home</h1>
+        <link rel="stylesheet" href="pages.css">
+        
+        <script>
+            function store(wish){
+                var wishlist = document.getElementById(wish).value;
+                localStorage.setItem('stored', wishlist);         
+            }
+            function empty(wishes){
+                document.getElementById(wishes).value = "";
+                document.getElementById(wishes).innerHTML = "";
+                localStorage.removeItem('stored');
+            }
+            function load(){
+                var wishlist = localStorage.getItem('stored');
+                if (wishlist){
+                    document.getElementById('list').value = wishlist;
+                }
+            }
+        </script>
+
+    </head>
+    <body onload="load()">
+        <div class=menu>
+            <a href="Products.html">Products</a>
+            <a href="FunFacts.html">Fun Facts</a>
+            <a href="Contact.html">Contact</a>
+            <a href="AboutUs.html">About Us</a>
+        </div>
+        <h6>WELCOME TO PET STORE!</h6>
+        <p>
+            This is our home page. <br>
+            Here you can enjoy these cute videos filmed in our store<br>
+            and you can also find a wishlist you may like edit below. <br> 
+            You can shop for pet related items and services on the Products link. <br>
+            You can learn interesting information about domestic animals under Fun Facts. <br>
+            You may wish to learn more about our store on the About Us page. <br>
+            Alternatively you may wish to contact us using the Contact page.
+        </p>
+        <div class="vids">
+            Here is our Dancing Puppy Pete <br>
+            <video controls preload>
+                <source src="DancingPuppy.mp4" type="video/mp4">
+                <source src="DancingPuppy.ogv" type="video/ogg"><br>
+                Can't view the video? <a href="DancingPuppy.mp4">Download Here</a>
+            </video><br>
+            <br> And here are two of our adorabl kittens <br>
+            <video controls preload>
+                <source src="TwoKitties.mp4" type="video/mp4">
+                <source src="TwoKitties.ogv" type="video/ogg"><br>
+                Can't view the video? <a href="TwoKitties.mp4">Download Here</a>
+            </video>
+        </div>
+        <div class="bucketlist">
+            <label for="list">Your current wishlist:</label><br>
+            <textarea class="box"></textarea>
+            <button value="add" onclick="store('list')">Save</button>
+            <button value="minus" onclick="empty('list')">Clear</button>
+        </div>
+    </body>
+</html>

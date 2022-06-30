@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Testing</title>
+        <h1>Does it work?</h1>
+        <link rel="stylesheet" href="pages.css">
+        
+        <script>
+            function storeText(inputID) {
+                //check to see if the localStorage item already exists
+                var userInput = localStorage.userInfo;
+                //set it up for new data to be appended
+                if(userInput!=null) userInput+=" ";
+                else userInput="";
+                //add the new data
+                userInput += document.getElementById(inputID).value;
+                //set the localStorage field with the updated data
+                localStorage.userInfo = userInput;
+                //write it to the page
+                document.getElementById("result").innerHTML = localStorage.userInfo + "- entered to date";
+            }
+        </script>
+
+    </head>
+    <body>
+        <input id="userText" type="text"/>
+        <input type="button" value="store" onclick="storeText('userText')"/>
+        <div id="result">
+        Result here
+        </div>
+    </body>
+</html>
+
+var wishlist = localStorage.userInfo;
+                if (wishlist == null) wishlist = "";
+                else wishlist += " ";
+
+                

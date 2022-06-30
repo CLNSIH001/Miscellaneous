@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador Kilojulio</string>
+    <string name="NKI">Ingesta neta de kJ</string>
+    <string name="avg_intake">Ingesta promedio</string>
+    <string name="calculate">Calcular</string>
+    <string name="calculator">Calculadora</string>
+    <string name="diary">Diario</string>
+    <string name="dinner">Cena</string>
+    <string name="discard">Descarte</string>
+    <string name="exerciseTotal">Ejercicio</string>
+    <string name="foodTotal">Comida</string>
+    <string name="jogging">Trotar</string>
+    <string name="lunch">Almuerzo</string>
+    <string name="nki_calc">Agregar una entrada de diario</string>
+    <string name="overview">Visión general</string>
+    <string name="previous">espalda</string>
+    <string name="save">Salvar</string>
+    <string name="sport">Deporte</string>
+    <string name="totals">Totales</string>
+    <string name="avg_Counter">Average NKI</string>
+</resources>
